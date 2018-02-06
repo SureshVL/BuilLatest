@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [FREE CRM Application Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.aia.join.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="AIA JOIN App Test Cases(failed)">
+    <classes>
+      <class name="com.aia.join.qa.testcases.PersonalAndContactInformationPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="getPCDetailsFromExcelandEnterData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.aia.join.qa.testcases.PersonalAndContactInformationPageTest -->
+    </classes>
+  </test> <!-- AIA JOIN App Test Cases(failed) -->
+</suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->
