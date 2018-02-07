@@ -1,5 +1,6 @@
 package com.aia.join.qa.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -82,9 +83,10 @@ public class PersonalAndContactInformationPageTest extends TestBase{
 		
 		
 		personalAndContactInformationPage =new PersonalAndContactInformationPage();
-		personalAndContactInformationPage.enterPersonalandContactPageHeadingData(pCInformationBeanObj);
+		String backGroundPageHeading= personalAndContactInformationPage.enterPersonalandContactPageHeadingData(pCInformationBeanObj);
 		//contactsPage.createNewContact(title, firstName, lastName, company);
-		
+		Assert.assertEquals(backGroundPageHeading, "Your background");
+
 	}
 	
 	/*@AfterMethod

@@ -130,7 +130,7 @@ public class PersonalAndContactInformationPage extends TestBase {
 	}
 	
 	
-	public void  enterPersonalandContactPageHeadingData(PCInformationBean PCInformationBeanObj){
+	public String  enterPersonalandContactPageHeadingData(PCInformationBean PCInformationBeanObj){
 		
 		
 		//Entering your personal information data
@@ -194,7 +194,8 @@ public class PersonalAndContactInformationPage extends TestBase {
 		}
 		pcContinueBtn.click();
 		
-		
+		return new BackGroundPage().getBackGroundPageHeading ();
+
 		
 		//Entering your address information data
 		
