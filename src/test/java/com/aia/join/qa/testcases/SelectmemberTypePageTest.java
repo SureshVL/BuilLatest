@@ -1,10 +1,6 @@
 package com.aia.join.qa.testcases;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import com.aia.join.aia.base.TestBase;
 import com.aia.join.qa.pages.LoginPage;
 import com.aia.join.qa.pages.SelectmemberTypePage;
@@ -18,7 +14,7 @@ public class SelectmemberTypePageTest extends TestBase{
 		super();		
 	}
 	
-	@BeforeMethod
+	//@BeforeMethod
 	public void setUp(){		
 		initialization();		
 		membershipQualifierPage=new SelectmemberTypePage(); 	

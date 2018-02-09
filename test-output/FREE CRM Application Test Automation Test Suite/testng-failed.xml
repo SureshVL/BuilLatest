@@ -6,12 +6,14 @@
   </listeners>
   <test name="AIA JOIN App Test Cases(failed)">
     <classes>
-      <class name="com.aia.join.qa.testcases.PersonalAndContactInformationPageTest">
+      <class name="com.aia.join.qa.testcases.PaymentInfoPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="getPCDetailsFromExcelandEnterData" invocation-numbers="0"/>
+          <include name="getPCDetailsFromExcelandEnterData"/>
+          <include name="setup"/>
+          <include name="getBGDetailsFromExcelandEnterData" invocation-numbers="0"/>
+          <include name="getPaymentDetailsFromExcelandEnterData"/>
         </methods>
-      </class> <!-- com.aia.join.qa.testcases.PersonalAndContactInformationPageTest -->
+      </class> <!-- com.aia.join.qa.testcases.PaymentInfoPageTest -->
     </classes>
   </test> <!-- AIA JOIN App Test Cases(failed) -->
 </suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->

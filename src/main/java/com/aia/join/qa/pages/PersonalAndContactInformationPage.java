@@ -168,7 +168,7 @@ public class PersonalAndContactInformationPage extends TestBase {
 			homeAddressLine2TxtBox.sendKeys(PCInformationBeanObj.getHomeAddressLine2());
 			homeAddressCityTxtBox.sendKeys(PCInformationBeanObj.getHomeAddressCity());
 			try{
-				Thread.sleep(10000);
+				Thread.sleep(1000);
 				}catch(Exception e)
 				{
 					
@@ -179,6 +179,8 @@ public class PersonalAndContactInformationPage extends TestBase {
 			homeAddressStateSelectSearchBox.sendKeys(PCInformationBeanObj.getHomeAddressState());
 			countryStateOption1.click();
 			
+			isHomePrimaryMailingOption.click();
+			
 			homeAddressZipTxtBox.sendKeys(PCInformationBeanObj.getHomeAddressZipcode());
 			homeAddressLine1TxtBox.click();
 			try{
@@ -188,7 +190,7 @@ public class PersonalAndContactInformationPage extends TestBase {
 					
 				}	
 			
-			//isHomePrimaryMailingOption.click();
+			
 		}else{
 			//workOptionBox.click();
 		}

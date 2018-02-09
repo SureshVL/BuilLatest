@@ -1,10 +1,13 @@
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\pages\LoginPage.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\aia\base\TestBase.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\ExtentReportListener\ExtentReporterNG.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\pages\SelectmemberTypePage.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\pages\PersonalAndContactInformationPage.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\util\TestUtil.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\pages\PaymentInformationPage.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\util\WebEventListener.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\beans\PCInformationBean.java
-D:\My Proj\git\joinautomation\src\main\java\com\aia\join\qa\pages\BackGroundPage.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\pages\LoginPage.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\util\WebEventListener.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\aia\base\TestBase.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\ExtentReportListener\ExtentReporterNG.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\util\TestUtil.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\beans\PaymentInfoBean.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\pages\PersonalAndContactInformationPage.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\beans\BGInformationBean.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\beans\PCInformationBean.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\pages\BackGroundPage.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\pages\SelectmemberTypePage.java
+D:\Latest Build Code\BuilLatest\src\main\java\test.java
+D:\Latest Build Code\BuilLatest\src\main\java\com\aia\join\qa\pages\PaymentInformationPage.java

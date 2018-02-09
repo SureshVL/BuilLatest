@@ -1,3 +1,5 @@
+com\aia\join\qa\testcases\PaymentInfoPageTest.class
 com\aia\join\qa\testcases\PersonalAndContactInformationPageTest.class
 com\aia\join\qa\testcases\SelectmemberTypePageTest.class
 com\aia\join\qa\testcases\LoginPageTest.class
+com\aia\join\qa\testcases\BackGroundPageTest.class

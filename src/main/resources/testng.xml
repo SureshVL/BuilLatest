@@ -9,9 +9,11 @@
 
 	<test name="AIA JOIN App Test Cases">
 		<classes>
-			<!-- <class name="com.aia.join.qa.testcases.LoginPageTest"></class>
-			<class name="com.aia.join.qa.testcases.PersonalAndContactInformationPageTest"></class>-->
-			<class name="com.aia.join.qa.testcases.SelectmemberTypePageTest"></class>
+			 <!-- <class name="com.aia.join.qa.testcases.LoginPageTest"></class>-->
+			<!-- <class name="com.aia.join.qa.testcases.PersonalAndContactInformationPageTest"></class>-->
+			<!-- <class name="com.aia.join.qa.testcases.SelectmemberTypePageTest"></class>-->
+		    <!-- <class name="com.aia.join.qa.testcases.BackGroundPageTest"></class>-->
+		     <class name="com.aia.join.qa.testcases.PaymentInfoPageTest"></class>
 		</classes>
 	</test>
 </suite>

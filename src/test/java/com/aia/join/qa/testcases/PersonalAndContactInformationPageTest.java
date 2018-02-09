@@ -1,9 +1,7 @@
 package com.aia.join.qa.testcases;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 import com.aia.join.aia.base.TestBase;
 import com.aia.join.qa.beans.PCInformationBean;
 import com.aia.join.qa.pages.LoginPage;
@@ -23,26 +21,26 @@ public class PersonalAndContactInformationPageTest extends TestBase{
 		super();		
 	}
 	
-	@BeforeMethod
+	//@BeforeMethod
 	public void setUp(){		
 		initialization();		
 		membershipQualifierPage=new SelectmemberTypePage(); 	
 		loginPage=new LoginPage(); 		
-		String  heading=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
+		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
 		membershipQualifierPage =new SelectmemberTypePage();
 		membershipQualifierPage.selectArchtypeQualifier();
 		membershipQualifierPage.clickOnContinueBtn();		
 		
 	}	
 	
-	@DataProvider
+	//@DataProvider
 	public Object[][] getPCData(){
 		Object data[][] = TestUtil.getTestData("pc");
 		return data;
 	}
 	
 	
-	@Test(priority=1, dataProvider="getPCData")
+	//@Test(priority=1, dataProvider="getPCData")
 	public void getPCDetailsFromExcelandEnterData(String prefix, String firstname, String middleinitial, String lastname,String suffix,String primarycontactinformation,String country,String phonenumber,	String registermembershiplocation,		
 			
 			String duesradioption,String primaryaddress,String home_country,String home_addline1,String home_addline2,String home_city,String home_address_state, String home_zipcode,String ishomeprimarymailing,String work_lookupname,String isworkprimarymailing){
