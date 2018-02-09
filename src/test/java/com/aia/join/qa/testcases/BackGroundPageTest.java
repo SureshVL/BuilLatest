@@ -7,15 +7,13 @@ import org.testng.annotations.Test;
 import com.aia.join.aia.base.TestBase;
 import com.aia.join.qa.beans.BGInformationBean;
 import com.aia.join.qa.beans.PCInformationBean;
-import com.aia.join.qa.beans.PaymentInfoBean;
 import com.aia.join.qa.pages.BackGroundPage;
 import com.aia.join.qa.pages.LoginPage;
-import com.aia.join.qa.pages.PaymentInformationPage;
 import com.aia.join.qa.pages.PersonalAndContactInformationPage;
 import com.aia.join.qa.pages.SelectmemberTypePage;
 import com.aia.join.qa.util.TestUtil;
 
-public class PaymentInfoPageTest extends TestBase {
+public class BackGroundPageTest extends TestBase {
 
 	LoginPage loginpage;
 	SelectmemberTypePage membershipQualifierPage;
@@ -23,12 +21,12 @@ public class PaymentInfoPageTest extends TestBase {
 	BackGroundPage backGroundPage;
 
 
-	public PaymentInfoPageTest(){
+	public BackGroundPageTest(){
 		super();
 
 	}
 
-	@BeforeClass
+	//@BeforeClass
 	public void setup(){ 
 		initialization();		
 		//membershipQualifierPage=new SelectmemberTypePage(); 	
@@ -42,14 +40,14 @@ public class PaymentInfoPageTest extends TestBase {
 	}
 
 
-	@DataProvider
+	//@DataProvider
 	public Object[][] getPCData(){
 		Object data[][] = TestUtil.getTestData("pc");
 		return data;
 	}
 
 
-	@Test(priority=1, dataProvider="getPCData")
+	//@Test(priority=1, dataProvider="getPCData")
 	public void getPCDetailsFromExcelandEnterData(String prefix, String firstname, String middleinitial, String lastname,String suffix,String primarycontactinformation,String country,String phonenumber,	String registermembershiplocation,		
 
 			String duesradioption,String primaryaddress,String home_country,String home_addline1,String home_addline2,String home_city,String home_address_state, String home_zipcode,String ishomeprimarymailing,String work_lookupname,String isworkprimarymailing){
@@ -94,14 +92,14 @@ public class PaymentInfoPageTest extends TestBase {
 
 	}
 
-	@DataProvider
+	//@DataProvider
 	public Object[][] getBGData(){
 		Object data[][] = TestUtil.getTestData("bgPage");
 		return data;
 	}
 
 
-	@Test(priority=2, dataProvider="getBGData")
+	//@Test(priority=2, dataProvider="getBGData")
 	public void getBGDetailsFromExcelandEnterData(String LicenseState, String LicenseNumber, String IssueDate, String ExpirationDate){
 
 
@@ -119,29 +117,6 @@ public class PaymentInfoPageTest extends TestBase {
 		Assert.assertEquals(pageHeading,"Payment information");
 
 	}
-
-	@DataProvider
-	public Object[][] getPaymentData(){
-		System.out.println("kmkm1");
-		Object data[][] = TestUtil.getTestData("payment");
-		System.out.println("kmkm2");
-		return data;
-	}
-
-	@Test(priority=3, dataProvider="getPaymentData")
-	public void getPaymentDetailsFromExcelandEnterData(String NameOnCard, String CardNo, String securityCode){
-		PaymentInfoBean paymentInfoBeanObj=new PaymentInfoBean();
-		//paymentInfoBeanObj.setNameOnCard(NameOnCard);
-		paymentInfoBeanObj.setNameOnCard(NameOnCard.substring(0,NameOnCard.length()-3).replaceAll("[^0-9]", ""));
-		paymentInfoBeanObj.setCreditCardNumber(CardNo);
-		//paymentInfoBeanObj.setSecurityCode(securityCode);
-		paymentInfoBeanObj.setSecurityCode(new Float(securityCode).intValue()+"");
-		PaymentInformationPage  paymentInformationPageObj=new PaymentInformationPage();
-		paymentInformationPageObj.enterCreditDebitPaymentData(paymentInfoBeanObj);
-		
-		
-	}
-	
 
 
 }
