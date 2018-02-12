@@ -58,17 +58,23 @@ public class PaymentInformationPage extends TestBase {
 		public void enterCreditDebitPaymentData(PaymentInfoBean PaymentInfoBeanObj){
 			debitOrCredit.click();
 			nameOnCard.sendKeys(PaymentInfoBeanObj.getNameOnCard());
+			//cardNo.sendKeys("4111111111111111");
 			cardNo.sendKeys(PaymentInfoBeanObj.getCreditCardNumber());
 			expirationDate.click();
 			monthDec.click();
 			securityCode.sendKeys(PaymentInfoBeanObj.getSecurityCode());
 			termsAndCond.click();
-			 try{
-					Thread.sleep(1000);
-					}catch(Exception e)
-					{
-						
-					}
+			try {
+				Thread.sleep(10000);
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			
+			submit_Payment.click();
+			
+			
+
 			 
 			
 				
