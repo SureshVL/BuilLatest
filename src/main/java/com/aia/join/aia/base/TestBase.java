@@ -19,13 +19,18 @@ public class TestBase {
 	public static Properties  prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListner;
+	public static final String workingDirectory= System.getProperty("user.dir");
+	
 	
 	public  TestBase(){		
 		try{
 		
 		prop = new Properties();		
 		//FileInputStream fi=new FileInputStream("/AIAJOINTEST/src/main/java/com/aia/join/qa/config/config.properties");
-		FileInputStream fi=new FileInputStream("D:/My Proj/git/joinautomation/src/main/java/com/aia/join/qa/config/config.properties");
+		
+		FileInputStream fi = new FileInputStream(System.getProperty(workingDirectory+"/src/main/java/com/aia/join/qa/config/config.properties"));
+		
+		//FileInputStream fi=new FileInputStream("D:/My Proj/git/joinautomation/src/main/java/com/aia/join/qa/config/config.properties");
 		prop.load(fi);
 		}catch(FileNotFoundException e){
 			e.printStackTrace();
@@ -40,7 +45,7 @@ public class TestBase {
 		String browserName=prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "D:\\CHROME\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", workingDirectory+"/src/main/java/com/aia/join/qa/util/chromedriver.exe");
 			driver=new ChromeDriver();
 			
 		}else if(browserName.equals("firefox")){			

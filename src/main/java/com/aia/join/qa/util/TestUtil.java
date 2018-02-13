@@ -14,7 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import com.aia.join.aia.base.TestBase;
 
-
+//
 
 public class TestUtil extends TestBase{
 	
@@ -23,7 +23,7 @@ public class TestUtil extends TestBase{
 	
 	//public static String TESTDATA_SHEET_PATH = "D:/My Proj/git/joinautomation/src/main/java/com/aia/join/qa/testdata/JoinData.xlsx";
 	
-	public static String TESTDATA_SHEET_PATH = "D:/Latest Build Code/BuilLatest/src/main/java/com/aia/join/qa/testdata/JoinData.xlsx";
+	public static String TESTDATA_SHEET_PATH = workingDirectory+"/src/main/java/com/aia/join/qa/testdata/JoinData.xlsx";
 	
 	
 	static Workbook book;

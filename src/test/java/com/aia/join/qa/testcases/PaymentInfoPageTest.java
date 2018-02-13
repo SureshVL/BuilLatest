@@ -114,7 +114,7 @@ public class PaymentInfoPageTest extends TestBase {
 		BGInformationBeanObj.setExpirationDate(ExpirationDate);
 
 		backGroundPage=new BackGroundPage();
-		backGroundPage.enterLicenseInfo(BGInformationBeanObj);
+	//	backGroundPage.enterLicenseInfo(BGInformationBeanObj);
 		String pageHeading = backGroundPage.enterLicenseInfo(BGInformationBeanObj);
 		Assert.assertEquals(pageHeading,"Payment information");
 
@@ -131,9 +131,9 @@ public class PaymentInfoPageTest extends TestBase {
 	@Test(priority=3, dataProvider="getPaymentData")
 	public void getPaymentDetailsFromExcelandEnterData(String NameOnCard, String CardNo, String securityCode){
 		PaymentInfoBean paymentInfoBeanObj=new PaymentInfoBean();
-		//paymentInfoBeanObj.setNameOnCard(NameOnCard);
-		paymentInfoBeanObj.setNameOnCard(NameOnCard.substring(0,NameOnCard.length()-3).replaceAll("[^0-9]", ""));
-		paymentInfoBeanObj.setCreditCardNumber(CardNo);
+		paymentInfoBeanObj.setNameOnCard(NameOnCard);
+		//paymentInfoBeanObj.setCreditCardNumber(CardNo);
+		paymentInfoBeanObj.setCreditCardNumber(CardNo.substring(0,CardNo.length()-3).replaceAll("[^0-9]", ""));
 		//paymentInfoBeanObj.setSecurityCode(securityCode);
 		paymentInfoBeanObj.setSecurityCode(new Float(securityCode).intValue()+"");
 		PaymentInformationPage  paymentInformationPageObj=new PaymentInformationPage();

@@ -78,7 +78,7 @@ public class BackGroundPage extends TestBase {
 	@FindBy(xpath= "//h1[text()='Payment information']")
 	WebElement paymentPageHeading ;
 
-
+//
 	
 	//Methods//
 	
