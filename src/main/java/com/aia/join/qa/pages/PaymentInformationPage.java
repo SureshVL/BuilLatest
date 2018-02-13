@@ -71,7 +71,7 @@ public class PaymentInformationPage extends TestBase {
 				e.printStackTrace();
 			}
 			
-			submit_Payment.click();
+			//submit_Payment.click();
 			
 			
 

@@ -28,7 +28,7 @@ public class TestBase {
 		prop = new Properties();		
 		//FileInputStream fi=new FileInputStream("/AIAJOINTEST/src/main/java/com/aia/join/qa/config/config.properties");
 		
-		FileInputStream fi = new FileInputStream(System.getProperty(workingDirectory+"/src/main/java/com/aia/join/qa/config/config.properties"));
+		FileInputStream fi = new FileInputStream(workingDirectory+"/src/main/java/com/aia/join/qa/config/config.properties");
 		
 		//FileInputStream fi=new FileInputStream("D:/My Proj/git/joinautomation/src/main/java/com/aia/join/qa/config/config.properties");
 		prop.load(fi);
